@@ -1,10 +1,7 @@
-#!/usr/bin/env python
-import os
-import sys
-
-if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "gettingstarted.settings")
-
-    from django.core.management import execute_from_command_line
-
-    execute_from_command_line(sys.argv)
+import streamlit as st
+st.write("""
+                 # Rock-Paper-Scissor Hand Sign Prediction
+                          """
+                                   )
+st.write("This is a simple image classification web app to predict rock-paper-scissor hand sign")
+file = st.file_uploader("Please upload an image file", type=["jpg", "png"])
